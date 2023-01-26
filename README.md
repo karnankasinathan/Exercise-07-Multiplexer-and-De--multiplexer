@@ -59,13 +59,13 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 
 # Step6: Generate RTL realization and timing diagrams.
 ### PROGRAM:
-
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: Rajesh A
-RegisterNumber: 22008551
-
+Developed by: KARNAN K
+RegisterNumber: 22003223
+```
 # MUX:
-
+```
 module mux(s1,s2,ip,iq,ir,is,y);
 input s1,s2,ip,iq,ir,is;
 output y;
@@ -78,9 +78,9 @@ assign c = ir & s1 & f;
 assign d = is & s1 & s2;
 assign y = a | b | c | d;
 endmodule
-
+```
 # DEMUX:
-
+```
  module demux(Y0,Y1,Y2,Y3,S0,S1,I);
  input S0,S1,I;
  output Y0,Y1,Y2,Y3;
@@ -92,7 +92,7 @@ endmodule
  and(Y2,I,S0,S1C);
  and(Y3,I,S0,S1);
  endmodule
-
+```
 # RTL LOGIC:
 # MUX:
 ![image](https://user-images.githubusercontent.com/118787064/214900885-09445420-5eb5-4933-ab1b-0ac27b0d7932.png)
